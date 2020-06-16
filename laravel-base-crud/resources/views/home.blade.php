@@ -4,8 +4,8 @@
   <main>
     @foreach ($cagnolini as $cagno)
 
-      <a href="{{route('gooddoggo', $cagno['id'])}}">{{$cagno['id']}}</a> <br>
-      {{$cagno['name']}} <br>
+      <a href="{{route('gooddoggo', $cagno['id'])}}"><i class="fas fa-dog"></i> {{$cagno['id']}}</a>
+      <p>{{$cagno['name']}}</p>
 
     @endforeach
   </main>

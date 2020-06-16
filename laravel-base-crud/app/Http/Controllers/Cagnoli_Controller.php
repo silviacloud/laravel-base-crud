@@ -21,4 +21,5 @@ class Cagnoli_Controller extends Controller
 
       return view('cagnolo', compact('cagno'));
     }
+
 }

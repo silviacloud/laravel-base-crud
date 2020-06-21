@@ -20,11 +20,13 @@
     <br>
 
     <a href="{{route ('edit', $omuncolo['id'])}}">EDIT</a>
-
     <a href="{{route ('destroy', $omuncolo['id'])}}">DELETE</a>
 
-
-
+    <div class="">
+      <a href="{{ route('home') }}">
+        <p>Omuncoli list</p>
+      </a>
+    </div>
 
   </main>
 

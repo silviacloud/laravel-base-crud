@@ -48,19 +48,19 @@ class OmuncoliController extends Controller
       // dd($validatedData);
       $omuncolo = Omuncolo::findOrFail($id);
 
-      $omuncolo -> name = $validatedData['firstname'];
-      $omuncolo -> name = $validatedData['lastname'];
-      $omuncolo -> name = $validatedData['role'];
-      $omuncolo -> name = $validatedData['phone_number'];
-      $omuncolo -> name = $validatedData['address'];
-      $omuncolo -> name = $validatedData['post_code'];
-      $omuncolo -> name = $validatedData['state'];
+      $omuncolo -> firstname = $validatedData['firstname'];
+      $omuncolo -> lastname = $validatedData['lastname'];
+      $omuncolo -> role = $validatedData['role'];
+      $omuncolo -> phone_number = $validatedData['phone_number'];
+      $omuncolo -> address = $validatedData['address'];
+      $omuncolo -> post_code = $validatedData['post_code'];
+      $omuncolo -> state = $validatedData['state'];
 
       $omuncolo -> save();
 
       return redirect()
-                  -> route('omuncolo_show',$id)
-                  -> withSuccess($omuncolo['name']
+                  -> route('show',$id)
+                  -> withSuccess($omuncolo['firstname']
                                   . ' updated');
     }
 
@@ -95,13 +95,13 @@ class OmuncoliController extends Controller
 
       $omuncolo = new Omuncolo;
 
-      $omuncolo -> name = $validatedData['firstname'];
-      $omuncolo -> name = $validatedData['lastname'];
-      $omuncolo -> name = $validatedData['role'];
-      $omuncolo -> name = $validatedData['phone_number'];
-      $omuncolo -> name = $validatedData['address'];
-      $omuncolo -> name = $validatedData['post_code'];
-      $omuncolo -> name = $validatedData['state'];
+      $omuncolo -> firstname = $validatedData['firstname'];
+      $omuncolo -> lastname = $validatedData['lastname'];
+      $omuncolo -> role = $validatedData['role'];
+      $omuncolo -> phone_number = $validatedData['phone_number'];
+      $omuncolo -> address = $validatedData['address'];
+      $omuncolo -> post_code = $validatedData['post_code'];
+      $omuncolo -> state = $validatedData['state'];
 
       $omuncolo -> save();
 

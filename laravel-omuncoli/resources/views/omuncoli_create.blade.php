@@ -19,25 +19,25 @@
       @method('POST')
 
       <label for="firstname">Firstname</label>
-      <input type="text" name="" value=""><br>
+      <input type="text" name="firstname" value="{{old('firstname')}}"><br>
 
       <label for="lastname">Lastname</label>
-      <input type="text" name="" value=""><br>
+      <input type="text" name="lastname" value="{{old('lastname')}}"><br>
 
       <label for="role">Role</label>
-      <input type="text" name="" value=""><br>
+      <input type="text" name="role" value="{{old('role')}}"><br>
 
       <label for="phone_number">Phone Number</label>
-      <input type="text" name="" value=""><br>
+      <input type="text" name="phone_number" value="{{old('phone_number')}}"><br>
 
       <label for="address">Address</label>
-      <input type="text" name="" value=""><br>
+      <input type="text" name="address" value="{{old('address')}}"><br>
 
       <label for="post_code">Post Code</label>
-      <input type="text" name="" value=""><br>
+      <input type="text" name="post_code" value="{{old('post_code')}}"><br>
 
       <label for="state">State</label>
-      <input type="text" name="" value=""><br>
+      <input type="text" name="state" value="{{old('state')}}"><br>
       <br>
 
       <input type="submit" name="submit" value="CREATE">

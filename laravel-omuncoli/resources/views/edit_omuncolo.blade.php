@@ -19,25 +19,25 @@
       @method('POST')
 
       <label for="firstname">Firstname</label>
-      <input type="text" name="" value="{{$omuncolo['firstname']}}"><br>
+      <input type="text" name="firstname" value="{{$omuncolo['firstname']}}"><br>
 
       <label for="lastname">Lastname</label>
-      <input type="text" name="" value="{{$omuncolo['lastname']}}"><br>
+      <input type="text" name="lastname" value="{{$omuncolo['lastname']}}"><br>
 
       <label for="role">Role</label>
-      <input type="text" name="" value="{{$omuncolo['role']}}"><br>
+      <input type="text" name="role" value="{{$omuncolo['role']}}"><br>
 
       <label for="phone_number">Phone Number</label>
-      <input type="text" name="" value="{{$omuncolo['phone_number']}}"><br>
+      <input type="text" name="phone_number" value="{{$omuncolo['phone_number']}}"><br>
 
       <label for="address">Address</label>
-      <input type="text" name="" value="{{$omuncolo['address']}}"><br>
+      <input type="text" name="address" value="{{$omuncolo['address']}}"><br>
 
       <label for="post_code">Post Code</label>
-      <input type="text" name="" value="{{$omuncolo['post_code']}}"><br>
+      <input type="text" name="post_code" value="{{$omuncolo['post_code']}}"><br>
 
       <label for="state">State</label>
-      <input type="text" name="" value="{{$omuncolo['state']}}"><br>
+      <input type="text" name="state" value="{{$omuncolo['state']}}"><br>
       <br>
 
       <input type="submit" name="submit" value="UPDATE">
